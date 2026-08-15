@@ -1,0 +1,9 @@
+table, th, td {
+    border: 1px solid black;
+}
+#employeeData {
+    background-color: aqua;
+}
+.description {
+    font-weight: bold;
+}
