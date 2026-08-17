@@ -18,6 +18,48 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
+        <form action="/" target="_blankß">
+            <label for="name">Name: </label><br />
+            <input type="text" id="name" name="name" autocomplete="off"/><br />
+            <label for="email">Email: </label><br />
+            <input type="text" id="email" name="email" /><br />
+            <input type="number"/><br/>
+            <input type="date"/>
+
+            <input type="radio" id="apple" name="fruit_names" value="Apple"/> 
+            <label for="apple">Apple </label><br />
+            <input type="radio" id="orange" value="Orange" name="fruit_names"/> 
+            <label for="orange">Orange </label><br />
+            <input type="radio" id="grapes" value="Grapes" name="fruit_names"/> 
+            <label for="grapes">Grapes </label><br />
+            <br />
+            <input type="checkbox" id="apple" name="fruit1" value="Apple"/> 
+            <label for="apple">Apple </label><br />
+            <input type="checkbox" id="orange" value="Orange" name="fruit2"/> 
+            <label for="orange">Orange </label><br />
+            <input type="checkbox" id="grapes" value="Grapes" name="fruit3"/> 
+            <label for="grapes">Grapes </label><br />
+
+            <select id="fruits" name="fruits" size="2">
+                <option value="Apple">Apple</option>
+                <option value="Orange">Orange</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Watermelom">Watermelom</option>
+            </select>
+
+            <select id="fruits" name="fruits" multiple>
+                <option value="Apple">Apple</option>
+                <option value="Orange">Orange</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Watermelom">Watermelom</option>
+            </select>
+
+            <textarea rows="5" columns="50"></textarea>
+
+            <input type="submit" value="Submit" />
+        </form>
+        
+        
         <h1 style="color: red;">Welcome to HTML5</h1>
         <h2 style="color: red;">Welcome to HTML5</h2>
         <h3 style="color: red;">Welcome to HTML5</h3>
