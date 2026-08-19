@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <form action="/" target="_blankß">
+        <!-- <form action="/" target="_blankß">
             <label for="name">Name: </label><br />
             <input type="text" id="name" name="name" autocomplete="off"/><br />
             <label for="email">Email: </label><br />
@@ -57,6 +57,29 @@
             <textarea rows="5" columns="50"></textarea>
 
             <input type="submit" value="Submit" />
+        </form> -->
+
+        <form id="myForm">
+            <label>Name: </label>
+            <input type="text" id="name" name="name"/><br /><br />
+
+            <label>Gender: </label>
+            <input type="radio" name="gender" value="Male" />Male
+            <input type="radio" name="gender" value="Female" />Female
+            <br /><br />
+            <label>Skills: </label>
+            <input type="checkbox" name="skills" value="HTML"/>HTML
+            <input type="checkbox" name="skills" value="CSS" /> CSS
+            <input type="checkbox" name="skills" value="Javascript" />Javascript
+            <br /><br />
+            <label>Country: </label>
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+            <br /><br />
+            <button type="submit" value="Submit">Submit</button>
         </form>
         
         
@@ -149,4 +172,26 @@
             <span>
         -->
     </body>
+    <script>
+        document.getElementById('myForm').addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const gender = document.querySelector('input[name="gender"]:checked')?.value;
+
+            // [HTML, CSS]
+
+            // console.log(Array.from(document.querySelectorAll("input[name='skills']:checked")));
+
+            const skills = Array.from(document.querySelectorAll("input[name='skills']:checked")).map(skill => skill.value);
+
+            const form = {
+                name: document.getElementById("name").value,
+                country: document.getElementById("country").value,
+                gender: gender,
+                skills: skills
+            }
+
+            console.log(JSON.stringify(form));
+        })
+    </script>
 </html>
