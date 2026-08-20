@@ -4,6 +4,29 @@
         <title>My first HTML page</title>
         <!-- Internal Style Sheet -->
         <style>
+            /* Descendent combinator */
+
+            /* div p {
+                background-color: green;
+            } */
+
+            /* child combinator */
+
+            /* div > p {
+                background-color: green;
+            } */
+
+            /* Next sibling combinator */
+
+            /* div + p {
+                background-color: green; 
+            } */
+
+            /* Subsequent-sibling selector */
+            div ~ p {
+                background-color: green;
+            }
+
             table, th, td {
                 border: 1px solid red;
             }
@@ -18,6 +41,39 @@
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
+
+        <!-- CSS Combinators -->
+
+        <div>
+            <p>asjhdgagsjhgjhasgf</p>
+            <p>asdfsdfsdf</p>
+            <p>sdfsdfsdfsdf</p>
+            <p>sdfdsfsdfsdf</p>
+            <section>
+                <p>asdyasdyutasyutduy</p>
+            </section>
+        </div>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+
+        <div>
+            <p>jhgadjhsgdg</p>
+            <p>jhgadjhsgdg</p>
+        </div>
+        <p>paragraph 3</p>
+        <p>paragraph 4</p>
+
+
+
+        <!-- CSS BOX model -->
+
+        <div style="background-color: grey;
+        border: 10px solid red;
+        padding: 50px;
+        margin: 50px;">
+            The term CSS Portal can refer to several different platforms depending on your context, most notably a web development resource site, a municipal Citizen Self-Service portal for permits, banking/government portals, or corporate logistics systems.
+        </div>
+
         <!-- <form action="/" target="_blankß">
             <label for="name">Name: </label><br />
             <input type="text" id="name" name="name" autocomplete="off"/><br />
